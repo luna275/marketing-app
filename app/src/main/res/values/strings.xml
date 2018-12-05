@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MarketApp</string>
+    <string name="search">Buscar anuncios</string>
 </resources>
