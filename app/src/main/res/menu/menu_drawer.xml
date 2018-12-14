@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:title="Navigate"
+        android:id="@+id/navigate_subgroup"
+        android:icon="@drawable/ic_location_on_black_24dp">
+    </item>
+
+    <item
+        android:title="Favorites"
+        android:id="@+id/favorites_subgroup">
+        <menu>
+            <item
+                android:id="@+id/fav_restaurants"
+                android:title="My favorite restaurants"
+                android:icon="@drawable/ic_restaurant_menu_black_24dp"></item>
+            <item
+                android:id="@+id/fav_sports"
+                android:title="My favorite sports shops"
+                android:icon="@drawable/ic_fitness_center_black_24dp"></item>
+            <item
+                android:id="@+id/fav_gas"
+                android:title="My favorite gas stations"
+                android:icon="@drawable/ic_local_gas_station_black_24dp"></item>
+        </menu>
+    </item>
+
+    <item
+        android:title="Settings"
+        android:id="@+id/settings_subgroup">
+        <menu>
+            <item
+                android:id="@+id/set_acount"
+                android:title="Account"></item>
+            <item
+                android:id="@+id/set_notifications"
+                android:title="Notifications"></item>
+            <item
+                android:id="@+id/set_more"
+                android:title="More settings"></item>
+        </menu>
+    </item>
+</menu>
