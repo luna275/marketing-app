@@ -1,6 +1,7 @@
 package com.iteso.marketapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
@@ -40,6 +41,13 @@ public class AdapterCategory extends RecyclerView.Adapter<AdapterCategory.ViewHo
         viewHolder.id = itemCategory.getIndex();
         viewHolder.title.setText(itemCategory.getCategoryName());
         viewHolder.image.setImageBitmap(itemCategory.getCategoryImage());
+        viewHolder.image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, ActivityAdd.class);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override

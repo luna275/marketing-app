@@ -54,7 +54,6 @@ public class ActivityMain extends AppCompatActivity {
         mAdapter = new AdapterCategory(this, categoryList);
         mRecyclerView.setAdapter(mAdapter);
 
-
     }
 
     @Override
